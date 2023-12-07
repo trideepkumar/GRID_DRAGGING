@@ -1,0 +1,14 @@
+table {
+    width: 80%;
+    height: 80vh;
+    border-collapse: collapse;
+    margin: auto;
+    
+}
+td {
+    width: 10%;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px; 
+}
