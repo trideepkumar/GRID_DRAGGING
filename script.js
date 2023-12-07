@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+
     const table = document.getElementById("grid");
 
     for (let i = 0; i < 10; i++) {
@@ -10,8 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
             if (i === 0 && j === 0) {
                 const button = document.createElement("button");
                 cell.appendChild(button);
-                button.innerText = "Drag Me!!";
-                button.setAttribute("draggable", "true");
+                button.innerText = "Drag Me";
+                button.draggable = true
+                console.log(button)
                 button.setAttribute("ondragstart", "drag(event)");
                 button.id = "dragbutton";
                 button.style.resize = "horizontal";
